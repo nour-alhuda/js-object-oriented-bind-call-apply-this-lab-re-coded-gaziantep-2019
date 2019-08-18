@@ -7,8 +7,7 @@ function setThisWithCall(fn, thisValue, arg){
   return fn.call(thisValue, arg);
 }
 function setThisWithApply(fn, thisValue, args){
-  const arr = Array.prototype.slice.call(args);
-  return fn.apply(thisValue, arr);
+  return fn.apply(thisValue, args);
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue){
